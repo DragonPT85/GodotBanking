@@ -1,8 +1,13 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Control.gd" type="Script" id=1]
+<<<<<<< HEAD
 [ext_resource path="res://Finances.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Labels.tscn" type="PackedScene" id=3]
+=======
+[ext_resource path="res://Labels.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Finances.tscn" type="PackedScene" id=3]
+>>>>>>> 9d5dc33920e0d7709ef9ae5d22320f6341a16c85
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -14,6 +19,7 @@ margin_top = 5.0
 margin_right = 1023.0
 margin_bottom = 608.0
 
+<<<<<<< HEAD
 [node name="Finances2" parent="TabContainer" instance=ExtResource( 2 )]
 visible = false
 margin_left = 4.0
@@ -21,6 +27,8 @@ margin_top = 32.0
 margin_right = -4.0
 margin_bottom = -4.0
 
+=======
+>>>>>>> 9d5dc33920e0d7709ef9ae5d22320f6341a16c85
 [node name="World" type="Panel" parent="TabContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -40,14 +48,24 @@ text = "yoo
 align = 1
 valign = 1
 
+<<<<<<< HEAD
 [node name="gdpLabels" parent="TabContainer/World" instance=ExtResource( 3 )]
+=======
+[node name="gdpLabels" parent="TabContainer/World" instance=ExtResource( 2 )]
+>>>>>>> 9d5dc33920e0d7709ef9ae5d22320f6341a16c85
 margin_left = 300.0
 margin_right = -723.0
 margin_bottom = -603.0
 
+<<<<<<< HEAD
 [node name="FinanceLabels" parent="TabContainer/World" instance=ExtResource( 3 )]
 
 [node name="Finances" parent="TabContainer" instance=ExtResource( 2 )]
+=======
+[node name="FinanceLabels" parent="TabContainer/World" instance=ExtResource( 2 )]
+
+[node name="Finances" parent="TabContainer" instance=ExtResource( 3 )]
+>>>>>>> 9d5dc33920e0d7709ef9ae5d22320f6341a16c85
 visible = false
 margin_left = 4.0
 margin_top = 32.0
