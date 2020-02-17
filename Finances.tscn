@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Finances.gd" type="Script" id=1]
+[ext_resource path="res://Labels.tscn" type="PackedScene" id=2]
 
 [node name="Finances" type="Control"]
 anchor_right = 1.0
@@ -17,3 +18,47 @@ margin_top = 117.0
 margin_right = 594.0
 margin_bottom = 217.0
 text = "asdasd"
+
+[node name="GridContainer" type="GridContainer" parent="Panel"]
+margin_left = 423.0
+margin_top = 100.0
+margin_right = 797.0
+margin_bottom = 430.0
+
+[node name="Labels2" parent="Panel/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_bottom = 20.0
+
+[node name="Labels3" parent="Panel/GridContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_bottom = 44.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+margin_left = 44.0
+margin_top = 184.0
+margin_right = 293.0
+margin_bottom = 411.0
+grow_vertical = 0
+
+[node name="Labels" parent="Panel/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 249.0
+margin_bottom = 20.0
+
+[node name="Labels2" parent="Panel/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 24.0
+margin_right = 249.0
+margin_bottom = 44.0
+
+[node name="Labels3" parent="Panel/VBoxContainer" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 48.0
+margin_right = 249.0
+margin_bottom = 68.0
