@@ -13,20 +13,26 @@ _global_script_classes=[ {
 "class": "Bank",
 "language": "GDScript",
 "path": "res://Bank.gd"
+}, {
+"base": "Reference",
+"class": "Sector",
+"language": "GDScript",
+"path": "res://Scripts/Sector.gd"
 } ]
 _global_script_class_icons={
-"Bank": ""
+"Bank": "",
+"Sector": ""
 }
 
 [application]
 
 config/name="New Game Project"
-run/main_scene="res://Control.tscn"
+run/main_scene="res://MainGame.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-WorldStage="*res://WorldStage.gd"
+WorldStage="*res://Scripts/WorldStage.gd"
 
 [rendering]
 
